@@ -283,6 +283,48 @@ contract ERC1155 is Context, ERC165, IERC1155, IERC1155MetadataURI {
         _uri = newuri;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mint(uint256 amount, string memory metadataHash) public returns (uint256) {
+    // require(msg.sender == owner, "Not contract owner");
+    //Whether only the contract owner can generate
+    nextTokenId++;
+    uint256 tokenId = nextTokenId;
+    _metadataHashes[tokenId] = metadataHash;
+    _mint(msg.sender, tokenId, amount, "");
+    return tokenId;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * @dev Creates `amount` tokens of token type `id`, and assigns them to `to`.
      *
