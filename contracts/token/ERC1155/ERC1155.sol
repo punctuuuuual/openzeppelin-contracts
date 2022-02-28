@@ -228,6 +228,37 @@ contract ERC1155 is Context, ERC165, IERC1155, IERC1155MetadataURI {
 
         _doSafeBatchTransferAcceptanceCheck(operator, from, to, ids, amounts, data);
     }
+    
+    
+    
+    
+    
+    
+    contract ERC1155 {
+    mapping(uint256 => string) private _metadataHashes;
+    string private _uriPrefix = "https://.....filename=metadata.json  ";
+
+    // return"https://.....filename=metadata.json"
+    // 
+    function uri(uint256 id) public view returns (string memory) {
+        return _concat(_uriPrefix, _metadataHashes[id], "?filename=metadata.json");
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     /**
      * @dev Sets a new URI for all token types, by relying on the token type ID
