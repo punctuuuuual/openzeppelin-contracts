@@ -3,6 +3,53 @@
 
 pragma solidity ^0.8.0;
 
+
+
+
+
+
+
+
+
+
+{
+    "name": "ETH",
+    "description": "ETH logo ",
+    "external_url": "https://michaelliao.github.io/simple-nft/",
+    "image": "https://ethereum.org/static/a110735dade3f354a46fc2446cd52476/f3a29/eth-home-icon.webp",
+    "attributes": [
+        {
+            "trait_type": "Type",
+            "value": "ETH"
+        },
+        {
+            "trait_type": "Author",
+            "value": " "
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import "./IERC1155.sol";
 import "./IERC1155Receiver.sol";
 import "./extensions/IERC1155MetadataURI.sol";
